@@ -7,15 +7,5 @@
   <comment/>
 
 </template>
- 
-<script>
 
-</script>
- 
-<style>
-h1 {
-  margin-top: 2rem;
-  color: #333;
-}
-
-</style>
+<script></script>
