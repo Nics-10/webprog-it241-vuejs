@@ -17,7 +17,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .banana {
   border: dashed black 1px;
   display: inline-block;
