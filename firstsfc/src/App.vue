@@ -1,21 +1,21 @@
-<script setup>
-import { ref, onMounted } from 'vue'
-import { supabase } from './lib/supabaseClient'
+<template>
+  <personal-profile />
+  <h1>Food</h1>
+  <food-item/>
+  <food-item2/>
+  <comment-form/>
+  <comment/>
 
-const instruments = ref([])
+</template>
+ 
+<script>
 
-async function getInstruments() {
-  const { data } = await supabase.from('instruments').select()
-  instruments.value = data
+</script>
+ 
+<style>
+h1 {
+  margin-top: 2rem;
+  color: #333;
 }
 
-onMounted(() => {
-   getInstruments()
-})
-</script>
-
-<template>
-  <ul>
-    <li v-for="instrument in instruments" :key="instrument.id">{{ instrument.name }}</li>
-  </ul>
-</template>
+</style>
